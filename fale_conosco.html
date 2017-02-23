@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html ng-app="Home">
+<head>
+    <meta charset="utf-8">
+    <title>Bevi Mais</title>
+    <!-- Google Icon Font -->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- materialize.css -->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/custom.css" media="screen,projection"/>
+    <!-- Otimizar para mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+    <header><!-- header -->
+        <nav><!-- nav -->
+            <div class="nav-wrapper white"><!-- nav-wrapper -->
+                <div class="col s4 m4 l4 "><!-- col -->
+                    <a href="#" class="brand-logo ">
+                        <img src="img/logo.png" class="responsive-img lg-img">
+
+                    </a>
+                </div><!-- col -->
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i
+                    class="material-icons blue-text">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#" class="blue darken-3 waves-effect waves-light btn fale-conosco">Fale Conosco</a></li>
+                        <li><a href="#" class="blue darken-3 waves-effect waves-light btn">Entrar/Cadastrar</a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li><a href="#" class="black-text fale-conosco">Fale Conosco</a></li>
+                        <li><a href="#" class="black-text">Entrar/Cadastrar</a></li>
+                    </ul>
+                </div><!-- nav-wrapper -->
+            </nav><!-- nav -->
+        </header><!-- header -->
+
+        <div class="container"><!-- container -->
+            <article><!-- article -->
+                <div class="row"><!-- row -->
+                    <h1>Fale Conosco</h1>
+                </div><!-- row -->
+
+                <form><!-- form -->
+                    <div class="row"><!-- row -->
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">perm_identity</i>
+                                <input id="icon_perm_identity" type="text" class="validate">
+                                <label for="icon_perm_identity">CPF</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input id="icon_account_circle" type="text" class="validate">
+                                <label for="icon_account_circle">Nome</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">email</i>
+                                <input id="icon_email" type="email" class="validate">
+                                <label for="icon_email">Email</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <i class="material-icons prefix">phone</i>
+                                <input id="icon_telephone" type="tel" class="validate">
+                                <label for="icon_telephone">Telefone</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">assignment</i>
+                                <select>
+                                    <option value="" disabled selected>Selecione...</option>
+                                    <option value="1">Cartão Bevi Mais MasterCard</option>
+                                    <option value="2">Código inválido</option>
+                                    <option value="3">Erro no acesso</option>
+                                    <option value="4">Erro no cadastro</option>
+                                    <option value="5">Novos prêmios</option>
+                                    <option value="6">Pontuação zerada</option>
+                                    <option value="7">Prazo de recebimento do prêmio</option>
+                                    <option value="8">Produção de vendas</option>
+                                    <option value="9">Dúvida sobre a campanha</option>
+                                    <option value="10">Saldo de pontos incorreto</option>
+                                    <option value="11">Senha</option>
+                                    <option value="12">Segunda via cartão MasterCard</option>
+                                </select>
+                                <label for="icon_account_circle">Assunto</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">comment</i>
+                                <textarea id="textarea" class="materialize-textarea"></textarea>
+                                <label for="textarea">Digite sua mensagem aqui</label>
+                            </div>
+                        </div>
+                    </div><!-- row -->
+
+                    <div class="row"><!-- row -->
+                        <div class="col s2 push-s10">
+                            <a href="#modal1" class="waves-effect waves-light btn-large modal-trigger">Enviar
+                                <i class="material-icons right modal-trigger">send</i>
+                            </a>
+                        </div>
+                    </div><!-- row -->
+
+                </form><!-- form -->
+            </article><!-- article -->
+        </div><!-- container -->
+
+
+        <!-- MODAL STRUCTURE -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <div class="container">
+                    <article><!-- article -->
+                        <div class="row"><!-- row -->
+                            <h1>Fale Conosco</h1>
+                        </div><!-- row -->
+
+                        <form><!-- form -->
+                            <div class="row"><!-- row -->
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <i class="material-icons prefix">perm_identity</i>
+                                        <input id="icon_perm_identity" type="text" class="validate">
+                                        <label for="icon_perm_identity">CPF</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <i class="material-icons prefix">account_circle</i>
+                                        <input id="icon_account_circle" type="text" class="validate">
+                                        <label for="icon_account_circle">Nome</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <i class="material-icons prefix">email</i>
+                                        <input id="icon_email" type="email" class="validate">
+                                        <label for="icon_email">Email</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <i class="material-icons prefix">phone</i>
+                                        <input id="icon_telephone" type="tel" class="validate">
+                                        <label for="icon_telephone">Telefone</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">assignment</i>
+                                        <select>
+                                            <option value="" disabled selected>Selecione...</option>
+                                            <option value="1">Cartão Bevi Mais MasterCard</option>
+                                            <option value="2">Código inválido</option>
+                                            <option value="3">Erro no acesso</option>
+                                            <option value="4">Erro no cadastro</option>
+                                            <option value="5">Novos prêmios</option>
+                                            <option value="6">Pontuação zerada</option>
+                                            <option value="7">Prazo de recebimento do prêmio</option>
+                                            <option value="8">Produção de vendas</option>
+                                            <option value="9">Dúvida sobre a campanha</option>
+                                            <option value="10">Saldo de pontos incorreto</option>
+                                            <option value="11">Senha</option>
+                                            <option value="12">Segunda via cartão MasterCard</option>
+                                        </select>
+                                        <label for="icon_account_circle">Assunto</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">comment</i>
+                                        <textarea id="textarea" class="materialize-textarea"></textarea>
+                                        <label for="textarea">Digite sua mensagem aqui</label>
+                                    </div>
+                                </div>
+                            </div><!-- row -->
+
+                            <div class="modal-footer">
+                                <div class="row"><!-- row -->
+                                    <div class="col s1 push-s11">
+                                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn"">Fechar
+                                            <i class="material-icons right modal-trigger">send</i>
+                                        </a>
+                                    </div>
+                                </div><!-- row -->
+                            </div>
+
+                        </form><!-- form -->
+                    </article><!-- article -->
+                </div>
+
+            </div>
+        </div>
+        <!-- MODAL STRUCTURE -->
+
+        <footer class="page-footer blue darken-3">
+            <div class="row"><!-- row -->
+                <div class="col s12 m8 l8"><!-- col -->
+                    <img src="img/logobranco.png" class="responsive-img">
+                </div><!-- col -->
+                <div class="col s12 m4 l4"><!-- col -->
+                    <ul class="">
+                        <li><a href="#!" class="white-text">Fale Conosco</a></li>
+                        <li><a href="#!" class="white-text">Entrar/Cadastrar</a></li>
+                    </ul>
+                </div><!-- col -->
+            </div>
+            <div class="footer-copyright center">
+                Copyright | <a class="white-text text-lighten-4" href="#!">BeviCred</a>
+            </div>
+        </footer>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/libs/materialize.min.js"></script>
+        <script type="text/javascript">
+            $('.datepicker').pickadate({
+        selectMonths: false, // Creates a dropdown to control month
+        selectYears: 15 // Creates a dropdown of 15 years to control year
+    });
+            $(document).ready(function() {
+                $('select').material_select();
+                $('.modal-trigger').leanModal();
+            });
+        </script>
+    </body>
+    </html>
+
+

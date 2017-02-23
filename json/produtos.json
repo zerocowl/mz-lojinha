@@ -1,0 +1,136 @@
+ [{
+     "nome": "Apple Watch",
+     "pontos": 360000,
+     "imagem": "img/Apple Watch1.jpe",
+     "descricao": "Breve descrição sobre o produto"
+ }, {
+     "nome": "Smart TV Sony 42'",
+     "pontos": 480000,
+     "imagem": "img/Smart TV Sony Bravia 42.jpg",
+     "descricao": "Breve descrição sobre o produto"
+ }, {
+     "nome": "Honda City",
+     "pontos": 6000000,
+     "imagem": "img/Honda City.jpg",
+     "descricao": "Breve descrição sobre o produto"
+ }, {
+     "nome": "Suzuki Burgman",
+     "pontos": 960000,
+     "imagem": "img/Suzuki Burgman.jpg",
+     "descricao": "Breve descrição sobre o produto"
+ }, {
+     "nome": "Honda HRV",
+     "pontos": 9000000,
+     "imagem": "img/Honda HRV.jpg",
+     "descricao": "Breve descrição sobre o produto"
+ }, {
+     "nome": "Bevi Mais MasterCard",
+     "pontos": 24000,
+     "imagem": "img/vale-presente.jpg",
+     "descricao": "Breve descrição sobre o produto"
+ }, {
+     "nome": "Impressora Multifuncional",
+     "pontos": 24000,
+     "imagem": "img/vale-presente.jpg",
+     "descricao": "Breve descrição sobre o produto"
+ }, {
+     "nome": "iPhone 6S",
+     "pontos": 480000,
+     "imagem": "img/iPhone 6S.jpg",
+     "descricao": "Breve descrição sobre o produto"
+ }, {
+     "nome": "iPhone 6S plus",
+     "pontos": 720000,
+     "imagem": "img/iPhone 6 plus.jpg",
+     "descricao": "Breve descrição sobre o produto"
+ }, {
+     "nome": "Notebook HP",
+     "pontos": 280000,
+     "imagem": "img/Notebook HP.jpg",
+     "descricao": "Breve descrição sobre o produto"
+ }, {
+     "nome": "Ar condicionado Eletrolux 7.000 BTUs quente/ frio 220v",
+     "pontos": 200000,
+     "imagem": "img/ar-condicionado.jpg",
+     "descricao": "Breve descrição sobre o produto"
+ }, {
+     "nome": "Chapinha Taiff com aquecimento cerâmico, ions e 200º C de Temperatura",
+     "pontos": 24000,
+     "imagem": "img/Chapinha.jpg",
+     "descricao": "Breve descrição sobre o produto"
+ }, {
+     "nome": "Balança Digital Black&Decker para até 180kg",
+     "pontos": 30000,
+     "imagem": "img/BalançaDigital.jpg",
+     "descricao": "Breve descrição sobre o produto"
+ }, {
+     "nome": "Fone de Ouvido Sony Headphone Preto",
+     "pontos": 30000,
+     "imagem": "img/FoneOuvidoSony.jpg",
+     "descricao": "Breve descrição sobre o produto"
+ }, {
+     "nome": "Barbeador Braun 350 Cleanning Center Molhado",
+     "pontos": 100000,
+     "imagem": "img/BarbeadorBraun.jpg",
+     "descricao": "Breve descrição sobre o produto"
+ }, {
+     "nome": "Caixa de Som Harman JBL Pulse - 6W - Bluetooth",
+     "pontos": 150000,
+     "imagem": "img/CaixaSomBluetooth.jpg",
+     "descricao": "Breve descrição sobre o produto"
+ }, {
+     "nome": "Panela de Pressão Elétrica Viva Collection Philips",
+     "pontos": 50000,
+     "imagem": "img/PanelaPressaoWalita.jpg",
+     "descricao": "Breve descrição sobre o produto"
+ }, {
+     "nome": "Ar condicionado portátil Consul 12.000 BTUs Frio",
+     "pontos": 280000,
+     "imagem": "img/ar-portatil.jpg",
+     "descricao": "Breve descrição sobre o produto"
+ }, {
+     "nome": "Resgate Sua Viagem",
+     "pontos": 1200000,
+     "imagem": "img/fernando-de-noronha.jpg",
+     "descricao": "Breve descrição sobre o produto"
+ }, {
+     "nome": "Honda Biz",
+     "pontos": 720000,
+     "imagem": "img/honda-biz-100-2015-2.jpg",
+     "descricao": "Breve descrição sobre o produto"
+ }, {
+     "nome": "Umidificador de Ar Electrolux com 4,5 litros",
+     "pontos": 50000,
+     "imagem": "img/UmidificadorEletrolux.jpg",
+     "descricao": "Breve descrição sobre o produto"
+ }, {
+     "nome": "BeviPag",
+     "pontos": 24000,
+     "imagem": "img/bevipag.gif",
+     "descricao": "Breve descrição sobre o produto"
+ }, {
+     "nome": "Conjunto de Potes Inox",
+     "pontos": 44000,
+     "imagem": "img/potes_inox.jpg",
+     "descricao": "Breve descrição sobre o produto"
+ }, {
+     "nome": "Telefone Sem Fio",
+     "pontos": 21000,
+     "imagem": "img/telefone_fixo.jpg",
+     "descricao": "Breve descrição sobre o produto"
+ }, {
+     "nome": "Cafeteira Elétrica",
+     "pontos": 23000,
+     "imagem": "img/cafeteira_eletrica.jpg",
+     "descricao": "Breve descrição sobre o produto"
+ }, {
+     "nome": "Capa para Notebook",
+     "pontos": 8000,
+     "imagem": "img/capa_notebook.jpg",
+     "descricao": "Breve descrição sobre o produto"
+ },{
+     "nome": "Impressora a Laser Portátil",
+     "pontos": 312000,
+     "imagem": "img/impressora_laser.jpg",
+     "descricao": "Breve descrição sobre o produto"
+ }]

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html ng-app="Home">
+<head>
+    <meta charset="utf-8">
+    <title>Bevi Mais</title>
+    <!-- Google Icon Font -->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- materialize.css -->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/custom.css" media="screen,projection"/>
+    <!-- Otimizar para mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+<header><!-- header -->
+    <nav><!-- nav -->
+        <div class="nav-wrapper white"><!-- nav-wrapper -->
+            <div class="col s4 m4 l4 "><!-- col -->
+                <a href="#" class="brand-logo ">
+                    <img src="img/logo.png" class="responsive-img lg-img">
+
+                </a>
+            </div><!-- col -->
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i
+                    class="material-icons blue-text">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#" class="blue darken-3 waves-effect waves-light btn fale-conosco">Fale Conosco</a></li>
+                <li><a href="#" class="blue darken-3 waves-effect waves-light btn">Entrar/Cadastrar</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="#" class="black-text fale-conosco">Fale Conosco</a></li>
+                <li><a href="#" class="black-text">Entrar/Cadastrar</a></li>
+            </ul>
+        </div><!-- nav-wrapper -->
+    </nav><!-- nav -->
+</header><!-- header -->
+
+<div class="container"><!-- container -->
+    <article><!-- article -->
+        <div class="row"><!-- row -->
+            <h1>Cadastro Bevi Mais</h1>
+            <h3>Dados Pessoais</h3>
+            <h6>Preenchimento obrigatório.</h6>
+        </div><!-- row -->
+
+        <form><!-- form -->
+            <div class="row"><!-- row -->
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">perm_identity</i>
+                        <input id="icon_perm_identity" type="text" class="validate">
+                        <label for="icon_perm_identity">CPF</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">code</i>
+                        <input id="icon_codigo_bevicred" type="text" class="validate">
+                        <label for="icon_codigo_bevicred">Código BeviCred</label>
+                    </div>
+
+                    <div class="input-field col s4">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_account_circle" type="text" class="validate">
+                        <label for="icon_account_circle">Nome</label>
+                    </div>
+                    <div class="input-field col s8">
+                        <i class="material-icons prefix">account_box</i>
+                        <input id="icon_account_box" type="text" class="validate">
+                        <label for="icon_account_box">Sobrenome</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">people_outline</i>
+                        <select id="icon_people_outline" class="validate">
+                            <option value="" disabled selected>Sexo</option>
+                            <option value="1">Masculino</option>
+                            <option value="2">Feminino</option>
+                        </select>
+                        <label for="icon_people_outline">Sexo</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">today</i>
+                        <input id="icon_today" type="date" class="datepicker">
+                        <label for="icon_today">Data de Nascimento</label>
+                    </div>
+                </div>
+
+                <div class="row"><!-- row -->
+                    <h3>Dados de contato</h3>
+                    <h6>Preenchimento obrigatório. O principal canal de contato sera o <b>email</b>.</h6>
+                </div><!-- row -->
+                
+
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">email</i>
+                        <input id="icon_email" type="email" class="validate">
+                        <label for="icon_email">Email</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">email</i>
+                        <input id="icon_email_confirm" type="email" class="validate">
+                        <label for="icon_email_confirm">Confirme o Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">lock</i>
+                        <input id="icon_lock_confirm" type="password" class="validate">
+                        <label for="icon_lock_confirm">Senha</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">lock</i>
+                        <input id="icon_lock" type="password" class="validate">
+                        <label for="icon_lock">Confirmar senha</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">lock_outline</i>
+                        <input id="icon_lock_outline" type="password" class="validate">
+                        <label for="icon_lock_outline">Insira sua senha do Domus</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <i class="material-icons prefix">phone</i>
+                        <select id="icon_telephone" >
+                            <option value="1">Celular</option>
+                            <option value="2">Residencial</option>
+                            <option value="3">Comercial</option>
+                            <option value="4">Outros</option>
+                        </select>
+                        <label for="icon_telephone">Tipo de Telefone</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input type="tel" class="validate">
+                        <label>Telefone</label>
+                    </div>
+                </div>
+
+                <div class="row"><!-- row -->
+                    <h3>Endereço</h3>
+                    <h6>Necessário para a entrega dos seus pedidos.</h6>
+                </div><!-- row -->
+                <div class="row">
+                    <div class="input-field col s2">
+                        <i class="material-icons prefix">my_location</i>
+                        <input id="icon_my_location" type="text" class="validate">
+                        <label for="icon_my_location">CEP</label>
+                    </div>
+                    <div class="input-field col s8">
+                        <i class="material-icons prefix">home</i>
+                        <input id="icon_home" type="text" class="validate">
+                        <label for="icon_home">Endereço</label>
+                    </div>
+                    <div class="input-field col s2">
+                        <i class="material-icons prefix">arrow_forward</i>
+                        <input id="icon_arrow_foward" type="text" class="validate">
+                        <label for="icon_arrow_foward">Número</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s3">
+                        <i class="material-icons prefix">location_city</i>
+                        <input id="icon_chevron_right" type="text" class="validate">
+                        <label for="icon_chevron_right">Complemento</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <i class="material-icons prefix">location_city</i>
+                        <input id="icon_bairro" type="text" class="validate">
+                        <label for="icon_bairro">Bairro</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <i class="material-icons prefix">location_city</i>
+                        <input id="icon_location_city" type="text" class="validate">
+                        <label for="icon_location_city">Cidade</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <i class="material-icons prefix">location_city</i>
+                        <input id="icon_UF" type="text" class="validate">
+                        <label for="icon_UF">UF</label>
+                    </div>
+                </div>
+            </div><!-- row -->
+
+            <div class="row"><!-- row -->
+                <p>
+                    <input type="checkbox" id="check1" />
+                    <label for="check1">Desejo receber informações importantes como meu saldo e novidades por e-mail.</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="check2" />
+                    <label for="check2">Li e concordo com os <a href="">Termos</a> de <a href="">Política de Privacidade</a> da Bevi Mais</label>
+                </p>
+            </div><!-- row -->
+
+            <div class="row"><!-- row -->
+                <div class="col s2 push-s10">
+                    <button class="btn-large waves-effect waves-light" type="submit" name="action">Cadastrar
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </div><!-- row -->
+
+        </form><!-- form -->
+    </article><!-- article -->
+</div><!-- container -->
+
+
+<footer class="page-footer blue darken-3">
+    <div class="row"><!-- row -->
+        <div class="col s12 m8 l8"><!-- col -->
+            <img src="img/logobranco.png" class="responsive-img">
+        </div><!-- col -->
+        <div class="col s12 m4 l4"><!-- col -->
+            <ul class="">
+                <li><a href="#!" class="white-text">Fale Conosco</a></li>
+                <li><a href="#!" class="white-text">Entrar/Cadastrar</a></li>
+            </ul>
+        </div><!-- col -->
+    </div>
+    <div class="footer-copyright center">
+        Copyright | <a class="white-text text-lighten-4" href="#!">BeviCred</a>
+    </div>
+</footer>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/libs/materialize.min.js"></script>
+<script type="text/javascript">
+    $('.datepicker').pickadate({
+        selectMonths: false, // Creates a dropdown to control month
+        selectYears: 15 // Creates a dropdown of 15 years to control year
+    });
+    $(document).ready(function() {
+        $('select').material_select();
+    });
+ </script>
+</body>
+</html>
+
+  

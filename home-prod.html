@@ -1,0 +1,193 @@
+<html ng-app="Produtos">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bevi Mais</title>
+  <!-- Google Icon Font -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- materialize.css -->
+  <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <!-- Otimizar para mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header>
+    <!-- header -->
+    <div class="navbar-fixed">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo"></a>
+      </div>
+      <nav class="blue darken-3">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo"> <img src="img/logobranco.png" alt="" class="responsive-img"> </a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <form>
+                <div class="input-field blue darken-2">
+                  <input id="search" type="search" required ng-model="filtroProdutos">
+                  <label for="search"><i class="material-icons">search</i></label>
+                  <i class="material-icons">close</i>
+                </div>
+              </form>
+            </li>
+            <li><a href=""><i class="material-icons center">home</i></a></li>
+            <li ng-cloak ng-controller="CarrinhoController"><a href="#!" class="dropdown-button" href="#!" data-activates="carrinho"><i class="material-icons left">shopping_basket</i>Carrinho</a>
+              <ul class="collection dropdown-content" id="carrinho">
+                <li class="collection-item avatar" ng-repeat="x in products">
+                  <img src="{{x.img}}" class="responsive-img circle">
+                  <span class="title blue-text text-darken-1">{{x.nome}}</span>
+                  <i class="material-icons secondary-content blue-text text-darken-4" id="remove-item" ng:click="removeItem($index)">remove_circle_outline</i>
+                </li>
+              </ul>
+            </li>
+            <li><a class="dropdown-button" href="#!" data-activates="perfil"><i class=" large material-icons left">account_circle</i>Perfil</a>
+              <ul id="perfil" class="dropdown-content ">
+                <li><a href="#!" id="editar" class="blue-text">Editar</a></li>
+                <li><a href="#!" class="blue-text">Extrato de Pontos</a></li>
+                <li><a href="#!" class="blue-text">Simulador</a></li>
+                <li class="divider"></li>
+                <li><a href="#!" class="blue-text">Sair</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="#!" id="editar" class="blue-text">Editar Perfil</a></li>
+            <li><a href="http://zerocowl.github.io/alterar_senha.html" id="editar" class="blue-text">Alterar Senha</a></li>
+            <li><a href="#!" class="blue-text">Extrato de Pontos</a></li>
+            <li><a href="#!" class="blue-text">Simulador</a></li>
+            <li class="divider"></li>
+            <li><a href="#!" class="blue-text">Sair</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- header -->
+  <div class="container">
+    <div class="row">
+      <div class="card blue darken-1">
+        <div class="card-content white-text">
+          <div class="row valign-wrapper">
+            <div class="col s3">
+              <img src="img/carro1.jpg" alt="" class="circle responsive-img z-depth-2">
+            </div>
+            <div class="col s6 m6">
+              <span class="card-title"><h5>Olá, Jose Padilha</h5></span>
+              <h6><b>Parceiro: </b> SC1911919</h6>
+              <h6><b>Ultimo acesso: </b> 2013-09-26</h6>
+              <div class="card blue darken-3 z-depth-1">
+                <div class="card-content white-text">
+                  Você tem: <b>100.00 </b>pontos
+                </div>
+              </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="col m3 center">
+              <div class="row">
+                <a id="hist" class="waves-effect waves-light btn blue darken-3"><i class="material-icons right">event_note</i>Historico</a>
+              </div>
+              <div class="row">
+                <a class="waves-effect waves-light btn blue darken-3"><i class="material-icons right">apps</i>Simulador</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--produtos-->
+    <div class="row" ng-app="produtosApp" ng-controller="produtosController">
+      <!-- row -->
+      <ul id="prod-list">
+        <li ng-repeat="produto in produtos | filter: filtroProdutos">
+          <div class="col s12 m4">
+            <!-- col -->
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator responsive-img" src="{{produto.imagem}}">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator">{{produto.nome | limitTo:15 }}<i class="material-icons right amber-text text-accent-4">description</i></span>
+                <p>
+                  <h6 class="blue-text">{{produto.pontos}} Pontos</h6</p>
+              </div>
+              <div class="card-action s6 m12 ">
+                <div class="row">
+                  <div class="input-field col s4 m5">
+                    <select>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+                  </div>
+                  <div class="input-field col s6 m5">
+                    <a class="blue darken-3 waves-effect waves-light btn right-align" ng:click="addItem()" onclick="Materialize.toast('Produto(s) adicionado!', 1000)">Resgatar</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title blue-text">TEGANEI É LIQUIDIFICADOR<i class="material-icons right">close</i></span>
+                <p>{{produto.descricao}}</p>
+              </div>
+            </div>
+        </li>
+      </ul>
+      </div>
+    </div>
+    <!-- container -->
+    <footer class="page-footer blue darken-3">
+      <div class="row">
+        <!-- row -->
+        <div class="col l6 s12">
+          <!-- col -->
+          <img src="img/logobranco.png" class="responsive-img">
+        </div>
+        <!-- col -->
+        <div class="col l4 offset-l2 s12">
+          <!-- col -->
+          <h5 class="white-text">Menu</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Home</a></li>
+            <li><a class="white-text" href="#!">Regulamento</a></li>
+            <li><a class="white-text" href="#!">Logar</a></li>
+          </ul>
+        </div>
+        <!-- col -->
+        <!-- botao acao negocio -->
+        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+          <a class="btn-floating  tooltipped btn-large amber accent-4" href="http://zerocowl.github.io/checkout.html" data-position="left" data-delay="100" data-tooltip="Resgatar Agora!">
+            <i class="material-icons">blur_on</i>
+          </a>
+          <ul>
+            <li><a class="btn-floating red darken-1"><i class="material-icons tooltipped" data-position="left" data-delay="100" data-tooltip="Precisa de ajuda?">help</i></a></li>
+            <li><a class="btn-floating light-blue darken-4" id="config"><i class="material-icons tooltipped" data-position="left" data-delay="100" data-tooltip="Configurações">settings</i></a></li>
+          </ul>
+        </div>
+        <!-- fim do botao-->
+      </div>
+      <div class="footer-copyright center">
+        Copyright Text
+        <a class="white-text text-lighten-4 right" href="#!">Link para P&N</a>
+      </div>
+    </footer>
+    <!-- Modal Perfil -->
+    <div ng-include="'js/partials/md-perfil.html'"></div>
+    <!-- Modal Admin TESTE -->
+    <div ng-include="'js/partials/md-adm.html'"></div>
+    <!-- Modal configurações -->
+    <div ng-include="'js/partials/md-config.html'"></div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/libs/materialize.min.js"></script>
+    <script type="text/javascript" src="js/libs/angular.min.js"></script>
+    <script type="text/javascript" src="js/filters/app.textFilter.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers/app.produtosController.js"></script>
+    <script type="text/javascript" src="js/controllers/app.carrinhoController.js"></script>
+</body>
+
+</html>
