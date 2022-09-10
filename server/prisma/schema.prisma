@@ -1,0 +1,95 @@
+datasource postgres {
+  provider = "postgresql"
+  url      = env("POSTGRESQL_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  company   Company? @relation(fields: [companyId], references: [id])
+  companyId String?
+  createdAt DateTime @default(now())
+  email     String?  @unique
+  groups    Group[]
+  id        String   @id @default(cuid())
+  name      String?
+  password  String
+  roles     String[]
+  updatedAt DateTime @updatedAt
+  username  String   @unique
+}
+
+model Company {
+  addresses Address[]
+  contacts  Contact[]
+  createdAt DateTime  @default(now())
+  devices   Device[]
+  document  String?   @unique
+  id        String    @id @default(cuid())
+  logo      String?
+  name      String?
+  updatedAt DateTime  @updatedAt
+  users     User[]
+}
+
+model Address {
+  city       String?
+  company    Company? @relation(fields: [companyId], references: [id])
+  companyId  String?
+  complement String?
+  createdAt  DateTime @default(now())
+  id         String   @id @default(cuid())
+  state      String?
+  street     String?
+  updatedAt  DateTime @updatedAt
+  zipCode    String?
+}
+
+model Contact {
+  company        Company? @relation(fields: [companyId], references: [id])
+  companyId      String?
+  createdAt      DateTime @default(now())
+  email          String?  @unique
+  id             String   @id @default(cuid())
+  phone          String?
+  representative String?
+  updatedAt      DateTime @updatedAt
+}
+
+model Group {
+  createdAt   DateTime @default(now())
+  description String?
+  devices     Device[]
+  id          String   @id @default(cuid())
+  name        String?
+  updatedAt   DateTime @updatedAt
+  user        User[]
+}
+
+model Device {
+  activateDate   DateTime?
+  advancedConfig Json?
+  company        Company?        @relation(fields: [companyId], references: [id])
+  companyId      String?
+  config         Json
+  createdAt      DateTime        @default(now())
+  expireDate     DateTime?
+  group          Group?          @relation(fields: [groupId], references: [id])
+  groupId        String?
+  id             String          @id @default(cuid())
+  isActive       Boolean?
+  kind           EnumDeviceKind?
+  name           String?
+  tags           Json?
+  updatedAt      DateTime        @updatedAt
+  uuid           String?
+  version        Int?
+  worktime       Json?
+}
+
+enum EnumDeviceKind {
+  Sigpark
+  Sigmeter
+}
